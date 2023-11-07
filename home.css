@@ -9,12 +9,27 @@
     --white-color: #ffffff;
     --background-color: #f5f5f5;
 }
+/* @font-face {
+    font-family: Oswald;
+    src: url('fonts/static/Oswald-Regular.ttf');
+} */
+@font-face {
+    font-family: raleway;
+    src: url('fonts/Raleway-VariableFont_wght.ttf');
+}
 .h1{
     color: var(--first-color);
     font-size: 30pt;
+    font-family: 'raleway';
+}
+.h2{
+    color: var(--heading-gray)
 }
 .h3{
     color: var(--heading-gray)
+}
+.body{
+    font-family: 'raleway', sans-serif;
 }
 .header_title{
     color: var(--first-color);
@@ -22,6 +37,7 @@
     margin-right: 200px;
 }
 .nav_bar{
+    font-family: 'raleway';
     display: flex;
     width: 100%;
     /* justify-content: space-between; */
@@ -31,6 +47,7 @@
     
 }
 .nav_list{
+    font-family: 'raleway';
     width: 500px;
     display: flex;
     list-style-type: none;
@@ -39,6 +56,7 @@
 }
 .nav_list_item{
     text-decoration: none;
+    text-align: center;
 
 }
 .nav_item{
@@ -49,6 +67,7 @@
     color: var(--heading-color);
 }
 .home_intro{
+    font-family: 'raleway';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,6 +100,7 @@
 }
 
 .personal_info{
+    font-family: 'raleway';
     background-color: var(--third-color);
     padding-top: 40px;
     padding-bottom: 70px;
@@ -104,6 +124,7 @@
     padding-top: 30px;
 }
 .home_values{
+    font-family: 'raleway';
     display: grid;
     place-items: center;
     margin-bottom: 50px;
@@ -132,6 +153,7 @@
     justify-content: center;
 }
 .home_history{
+    font-family: 'raleway';
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -157,9 +179,10 @@
 .home_history_img{
     width: 400px;
     margin-left: 100px;;
-
+    
 }
 .home_website_links{
+    font-family: 'raleway';
     display: flex;
     justify-content: center;
     /* align-items: center; */
