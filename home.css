@@ -1,14 +1,55 @@
 
 
-:root {
+/* :root {
+    --first-color: #b23850;
+    --second-color: #3b8beb;
+    --third-color: #e7e3d4;
+    --fourth-color: #c4dbf6;
+    --first-color: #db0038;
+    --second-color: #f7c200;
+    --third-color: #519dd9;
+    --fourth-color: #53bac1;
+    --heading-color: #000000;
+    --heading-gray: #36454f;
+    --white-color: #ffffff;
+    --background-color: #ededed;
+} */
+/* :root {
     --first-color: #8f0020;
     --second-color: #f0aa00;
     --third-color: #24c085;
+    --fourth-color: #36454f;
     --heading-color: #000000;
     --heading-gray: #36454f;
     --white-color: #ffffff;
     --background-color: #f5f5f5;
+} */
+:root {
+    --first-color: #8f0020;
+    /* --first-color: #424530; */
+    --second-color: #f0bd00;
+    /* --second-color-light: rgba(240, 189, 0, 0.8); */
+    /* --second-color-light: hsl(var(--second-color),calc(var(--l) + 50%)); */
+    
+    --third-color: #a58e74;
+    /* --third-color: #a58e74; */
+    --fourth-color: #ffefcd;
+    --fifth-color: #ffffff;
+    --heading-color: #000000;
+    --background-color: #f5f5f5;
 }
+/* :root {
+    --first-color: #8f0020;
+    --second-color: #f0bd00;
+    --second-color-light: rgba(240, 189, 0, 0.8);
+    --second-color-light: hsl(var(--second-color),calc(var(--l) + 50%));
+    
+    --third-color: #36454f;
+    --fourth-color: #bebfc5;
+    --fifth-color: #ffffff;
+    --heading-color: #000000;
+    --background-color: #f5f5f5;
+} */
 /* @font-face {
     font-family: Oswald;
     src: url('fonts/static/Oswald-Regular.ttf');
@@ -35,16 +76,26 @@
     color: var(--first-color);
     text-align: left;
     margin-right: 200px;
+    font-size: 18pt;
+    text-decoration: none;
+    font-weight: 700;
 }
 .nav_bar{
     font-family: 'raleway';
     display: flex;
-    width: 100%;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid var(--heading-gray);
-    
+    border-bottom: 1px solid var(--heading-color);
+    /* background-color: var(--fourth-color); */
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .nav_list{
     font-family: 'raleway';
@@ -57,13 +108,16 @@
 .nav_list_item{
     text-decoration: none;
     text-align: center;
-
+    display: flex;
+    width: 10%;
+    
 }
 .nav_item{
+    text-align: center;
     text-decoration: none;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14pt;
     color: var(--heading-color);
 }
 .home_intro{
@@ -78,9 +132,22 @@
     width: 400px;
     margin-right: 100px;
 }
+.home_greeting{
+    font-size: 35pt;
+    color: var(--first-color);
+    margin-bottom: 5pt;
+}
+.home_greeting_title{
+    font-size: 16pt;
+    font-weight: 600;
+    color: var(--third-color);
+}
 .home__img{
     /* width: 200px; */
-    height: 300px;
+    /* height: 10%; */
+    /* width: 25%; */
+    height: 400px;
+    /* max-width: 500px; */
     border-radius: 50%;
     overflow: clip;
     justify-content: center;
@@ -88,12 +155,12 @@
     margin-left: 100px;
 }
 .about_button{
-    background-color: var(--first-color);
+    background-color: var(--third-color);
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
     border: none;
-    color: var(--white-color);
+    color: var(--fifth-color);
     text-decoration: none;
     font-weight: 700;
     font-size: 20px;
@@ -101,7 +168,7 @@
 
 .personal_info{
     font-family: 'raleway';
-    background-color: var(--third-color);
+    background-color: var(--second-color-light);
     padding-top: 40px;
     padding-bottom: 70px;
     justify-content: center;
@@ -115,7 +182,7 @@
     align-items: center;
     list-style-type: none;
     justify-content: center;
-    
+    font-size: 16pt;
 }
 .personal_li{
     align-items: center;
@@ -127,6 +194,7 @@
     font-family: 'raleway';
     display: grid;
     place-items: center;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 .value_title{
@@ -134,12 +202,13 @@
     
 }
 .home_values_list{
-    min-width: 1200px;
+    max-width: 1100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .value_list_item{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 18pt;
     width: 150px;
     height: 150px;
@@ -218,6 +287,7 @@
     color: var(--heading-color);
     margin-bottom: 20px;
     opacity: 1;
+    font-size: 16pt;
 }
 .home_block_description{
     opacity: 1;
