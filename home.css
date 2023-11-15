@@ -1,55 +1,16 @@
 
 
-/* :root {
-    --first-color: #b23850;
-    --second-color: #3b8beb;
-    --third-color: #e7e3d4;
-    --fourth-color: #c4dbf6;
-    --first-color: #db0038;
-    --second-color: #f7c200;
-    --third-color: #519dd9;
-    --fourth-color: #53bac1;
-    --heading-color: #000000;
-    --heading-gray: #36454f;
-    --white-color: #ffffff;
-    --background-color: #ededed;
-} */
-/* :root {
-    --first-color: #8f0020;
-    --second-color: #f0aa00;
-    --third-color: #24c085;
-    --fourth-color: #36454f;
-    --heading-color: #000000;
-    --heading-gray: #36454f;
-    --white-color: #ffffff;
-    --background-color: #f5f5f5;
-} */
 :root {
-    --first-color: #8f0020;
-    /* --first-color: #424530; */
-    --second-color: #f0bd00;
-    /* --second-color-light: rgba(240, 189, 0, 0.8); */
-    /* --second-color-light: hsl(var(--second-color),calc(var(--l) + 50%)); */
-    
-    --third-color: #a58e74;
-    /* --third-color: #a58e74; */
-    --fourth-color: #ffefcd;
-    --fifth-color: #ffffff;
+    --first-color: #9b000a;
+    --first-color-light: rgba(155, 0, 10, 0.7);
+    --second-color:  rgba(255, 168, 0, 0.9);
+    --second-color-light: rgba(255, 168, 0, 0.6);
+    --background-color: #f3efd0;
+    --third-color: #730000;
     --heading-color: #000000;
-    --background-color: #f5f5f5;
+    --white-color: #f5f5f5;
 }
-/* :root {
-    --first-color: #8f0020;
-    --second-color: #f0bd00;
-    --second-color-light: rgba(240, 189, 0, 0.8);
-    --second-color-light: hsl(var(--second-color),calc(var(--l) + 50%));
-    
-    --third-color: #36454f;
-    --fourth-color: #bebfc5;
-    --fifth-color: #ffffff;
-    --heading-color: #000000;
-    --background-color: #f5f5f5;
-} */
+
 /* @font-face {
     font-family: Oswald;
     src: url('fonts/static/Oswald-Regular.ttf');
@@ -69,11 +30,14 @@
 .h3{
     color: var(--heading-gray)
 }
-.body{
+body{
     font-family: 'raleway', sans-serif;
+    background-color: var(--white-color);
 }
 .header_title{
-    color: var(--first-color);
+    color: var(--third-color);
+    /* color: var(--heading-color); */
+    /* color: var(--first-color); */
     text-align: left;
     margin-right: 200px;
     font-size: 18pt;
@@ -83,10 +47,13 @@
 .nav_bar{
     font-family: 'raleway';
     display: flex;
+    padding-top: 0;
+    margin-top: 0;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid var(--heading-color);
-    /* background-color: var(--fourth-color); */
+    /* background-color: var(--white-color); */
+    background-color: var(--background-color);
 }
 .nav_container{
     display: flex;
@@ -133,14 +100,15 @@
     margin-right: 100px;
 }
 .home_greeting{
-    font-size: 35pt;
+    font-size: 38pt;
     color: var(--first-color);
     margin-bottom: 5pt;
 }
 .home_greeting_title{
     font-size: 16pt;
     font-weight: 600;
-    color: var(--third-color);
+    color: var(--heading-color);
+    /* color: var(--third-color); */
 }
 .home__img{
     /* width: 200px; */
@@ -155,83 +123,41 @@
     margin-left: 100px;
 }
 .about_button{
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     display: inline-block;
     padding: 20px;
     border-radius: 10px;
     border: none;
     color: var(--fifth-color);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
 }
-
-.personal_info{
-    font-family: 'raleway';
-    background-color: var(--second-color-light);
-    padding-top: 40px;
-    padding-bottom: 70px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 100%;
-}
-.personal_info_list{
+.home_block{
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style-type: none;
-    justify-content: center;
-    font-size: 16pt;
 }
-.personal_li{
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
-    padding-top: 30px;
-}
-.home_values{
-    font-family: 'raleway';
-    display: grid;
-    place-items: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-.value_title{
-    font-weight: 500;
-    
-}
-.home_values_list{
-    max-width: 1100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.value_list_item{
-    font-weight: 600;
-    font-size: 18pt;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--second-color);
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-.home_history{
+.home_round_block{
     font-family: 'raleway';
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-color);
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     padding-bottom: 20px;
+    max-width: 1200px;
+    border-radius: 40px;
+}
+#story{
+    background-color: var(--first-color-light);
+}
+#work{
+    background-color: var(--second-color-light);
 }
 .home_history_title{
-    color: var(--first-color);
+    color: var(--heading-color);
+    /* color: var(--first-color); */
     margin-top: 20px;
     font-size: 30pt;
     margin-bottom: 20px;
@@ -242,15 +168,19 @@
 }
 .home_history_story{
     width: 400px;
-    margin-right: 100px;;
+    margin-right: 50px;
+    margin-left: 50px;
     
 }
-.home_history_img{
+.home_block_img{
     width: 400px;
-    margin-left: 100px;;
+    margin-right: 50px;
+    margin-left: 50px;
     
 }
 .home_website_links{
+    margin-top: 80px;
+    margin-bottom: 80px;
     font-family: 'raleway';
     display: flex;
     justify-content: center;
@@ -273,10 +203,12 @@
     
 }
 .home_link_block1{
-    background-color: var(--first-color);
+    /* background-color: var(--first-color-light); */
+    background-color: var(--third-color);
 }
 .home_link_block2{
-    background-color: var(--second-color);
+    /* background-color: var(--second-color); */
+    background-color: var(--third-color);
 }
 .home_link_block3{
     background-color: var(--third-color);
@@ -284,7 +216,8 @@
 .home_block_title{
     text-decoration: none;
     text-align: center;
-    color: var(--heading-color);
+    /* color: var(--third-color); */
+    color: var(--second-color);
     margin-bottom: 20px;
     opacity: 1;
     font-size: 16pt;
@@ -292,7 +225,7 @@
 .home_block_description{
     opacity: 1;
     text-align: center;
-    color: var(--heading-color);
+    color: var(--background-color);
     display: flex;
     font-size: large;
 }
