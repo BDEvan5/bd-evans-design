@@ -1,6 +1,15 @@
 
 
 :root {
+    --first-color: #CC081F;
+    --second-color:  #feb600;
+    --third-color: #FEEB9F;
+    --fourth-color: #F3D482;
+    --fifth-color: #D1A14C;
+    --heading-color: #000000;
+    --white-color: #f5f5f5;
+}
+/* :root {
     --first-color: #9b000a;
     --first-color-light: rgba(155, 0, 10, 0.7);
     --second-color:  rgba(255, 168, 0, 0.9);
@@ -9,7 +18,7 @@
     --third-color: #730000;
     --heading-color: #000000;
     --white-color: #f5f5f5;
-}
+} */
 
 /* @font-face {
     font-family: Oswald;
@@ -35,9 +44,10 @@ body{
     background-color: var(--white-color);
 }
 .header_title{
-    color: var(--third-color);
+    /* color: var(--fifth-color); */
+    /* color: var(--fifth-color); */
     /* color: var(--heading-color); */
-    /* color: var(--first-color); */
+    color: var(--first-color);
     text-align: left;
     margin-right: 200px;
     font-size: 18pt;
@@ -53,7 +63,7 @@ body{
     align-items: center;
     border-bottom: 1px solid var(--heading-color);
     /* background-color: var(--white-color); */
-    background-color: var(--background-color);
+    background-color: var(--third-color);
 }
 .nav_container{
     display: flex;
@@ -128,9 +138,10 @@ body{
     padding: 20px;
     border-radius: 10px;
     border: none;
-    color: var(--fifth-color);
+    color: var(--heading-color);
+    /* color: var(--white-color); */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
 }
 .home_block{
@@ -150,10 +161,10 @@ body{
     border-radius: 40px;
 }
 #story{
-    background-color: var(--first-color-light);
+    background-color: var(--first-color);
 }
 #work{
-    background-color: var(--second-color-light);
+    background-color: var(--second-color);
 }
 .home_history_title{
     color: var(--heading-color);
@@ -217,7 +228,7 @@ body{
     text-decoration: none;
     text-align: center;
     /* color: var(--third-color); */
-    color: var(--second-color);
+    color: var(--heading-color);
     margin-bottom: 20px;
     opacity: 1;
     font-size: 16pt;
@@ -225,7 +236,7 @@ body{
 .home_block_description{
     opacity: 1;
     text-align: center;
-    color: var(--background-color);
+    color: var(--first-color);
     display: flex;
     font-size: large;
 }
