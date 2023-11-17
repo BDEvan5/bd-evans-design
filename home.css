@@ -1,11 +1,13 @@
 
 
 :root {
-    --first-color: #CC081F;
-    --second-color:  #feb600;
-    --third-color: #FEEB9F;
-    --fourth-color: #F3D482;
-    --fifth-color: #D1A14C;
+    --first-color: #800020;
+    /* --first-color: #bf6059; */
+    --second-color:  #ffc857;
+    /* --second-color:  #FBC00D; */
+    --third-color: #f3eff5;
+    /* --fourth-color: #BE8901;
+    --fifth-color: #414141; */
     --heading-color: #000000;
     --white-color: #f5f5f5;
 }
@@ -162,12 +164,13 @@ body{
 }
 #story{
     background-color: var(--first-color);
+    color: var(--third-color);
 }
 #work{
     background-color: var(--second-color);
 }
 .home_history_title{
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     /* color: var(--first-color); */
     margin-top: 20px;
     font-size: 30pt;
@@ -215,20 +218,20 @@ body{
 }
 .home_link_block1{
     /* background-color: var(--first-color-light); */
-    background-color: var(--third-color);
+    background-color: var(--first-color);
 }
 .home_link_block2{
     /* background-color: var(--second-color); */
-    background-color: var(--third-color);
+    background-color: var(--first-color);
 }
 .home_link_block3{
-    background-color: var(--third-color);
+    background-color: var(--first-color);
 }
 .home_block_title{
     text-decoration: none;
     text-align: center;
     /* color: var(--third-color); */
-    color: var(--heading-color);
+    color: var(--third-color);
     margin-bottom: 20px;
     opacity: 1;
     font-size: 16pt;
@@ -236,7 +239,8 @@ body{
 .home_block_description{
     opacity: 1;
     text-align: center;
-    color: var(--first-color);
+    color: var(--second-color);
+    /* color: #000000; */
     display: flex;
     font-size: large;
 }
