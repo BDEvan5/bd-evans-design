@@ -18,6 +18,14 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+.header_title{
+    color: var(--accent-one);
+    text-align: left;
+    margin-right: 200px;
+    font-size: 18pt;
+    text-decoration: none;
+    font-weight: 650;
+  }
 .nav_list{
     font-family: 'raleway';
     width: 500px;

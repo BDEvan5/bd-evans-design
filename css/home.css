@@ -1,14 +1,15 @@
 
 
+
 :root {
     --main-one: #e3a220;
     --main-two: #ac311f;
     --accent-one: #767e2b;
     --neutral: #ede7d2;
     --dark-neutral: #06213e;
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: raleway;
     src: url('./fonts/Raleway-VariableFont_wght.ttf');
 }
@@ -16,25 +17,18 @@
     color: var(--main-two);
     font-size: 30pt;
     font-family: 'raleway';
-}
-.h2{
+  }
+  .h2{
     color: var(--accent-one)
-}
-.h3{
+  }
+  .h3{
     color: var(--dark-neutral)
-}
-body{
+  }
+  body{
     font-family: 'raleway', sans-serif;
     background-color: var(--white-color);
-}
-.header_title{
-    color: var(--accent-one);
-    text-align: left;
-    margin-right: 200px;
-    font-size: 18pt;
-    text-decoration: none;
-    font-weight: 650;
-}
+  }
+  
 .home_intro{
     font-family: 'raleway';
     display: flex;
@@ -95,6 +89,7 @@ body{
     padding-bottom: 20px;
     max-width: 1200px;
     border-radius: 40px;
+    background-color: var(--neutral);
 }
 #story{
     background-color: var(--neutral);
