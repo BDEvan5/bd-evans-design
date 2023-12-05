@@ -70,17 +70,6 @@
     margin-bottom: 6px;
     padding-left: 10px;
 }
-.research_year{
-    margin-top: 6px;
-    margin-bottom: 6px;
-    display: flex;
-    text-align: center;
-    /* justify-content: center; */
-    margin-left: 10px;
-    margin-right: 10px;
-
-}
-
 .art_item{
     width: 90%;
     display: flex;
@@ -120,4 +109,15 @@
 .art_journal{
     font-style: italic;
 }
-
+.art_link_list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-inline-start: 0;
+}
+.art_link_item{
+    margin-right: 20px;
+    text-align: left;
+    color: var(--blue);
+    text-decoration: none;
+}
