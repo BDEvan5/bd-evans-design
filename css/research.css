@@ -5,7 +5,7 @@
 }
 
 .research{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,65 +17,107 @@
     max-width: 1100px;
 }
 .research_img{
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
-    zoom: 200%;
+    zoom: 100%;
     padding-right: 50px;
     padding-left: 50px;
 }
 .research_name_heading{
-    font-size: 26;
-    font-weight: 600;
+    font-size: 30;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    font-weight: 500;
 }
 .gray_second{
-    font-size: 10;
-    font-weight: 500;
+    font-size: 16;
+    font-weight: 400;
     color: var(--gray);
 }
 .research_head_content{
-    display: flex;
-    flex-direction: column;
+    justify-content: left;
+    /* display: flex;
+    flex-direction: column; */
 }
 .specials{
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding-inline-start: 0;
 }
 .special_item{
-    width: 200px;
+    /* width: 200px; */
     margin-right: 20px;
     text-align: left;
     color: var(--blue);
 }
 
-.article_head{
-    display: flex;
+.article_list{
     width: 90%;
-    max-width: 1200px;
-    margin-top: 50px;
-    background-color: lightgray;
-    padding: 10px;
-}
-.research_title{
-    width: 90%;
-}
-.research_year{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
-}
-.article_item{
-    width: 90%;
-    display: flex;
+    max-width: 1000px;
     
 }
-.article_content{
+.article_head{
     width: 90%;
-    /* display: flex; */
-
+    display: flex;
+    margin-top: 20px;
+    background-color: lightgray;
+    padding: 0px;
+    padding-right: 10px;
+}
+.research_title{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+}
+.research_year{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
+.art_item{
+    width: 90%;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.art_content{
+    width: 70%;
+}
+.art_title{
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: larger;
+}
+.art_img_container{
+    width: 30%;
+    max-height: 150px;
+    margin-right: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
+}
+.art_img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+}
+.art_authors{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.art_journal{
+    font-style: italic;
+}
 
