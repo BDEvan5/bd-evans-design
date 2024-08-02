@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Resources</title>
@@ -11,79 +12,104 @@
 
 <body>
 
-<nav class="nav_bar">
-    <div class="nav_container">
-        <a href="./index.html" class="header_title">Benjamin's Home</a>
-        <ul class="nav_list">
-            <li class="nav_list_item"><a class="nav_item" href="./research.html">Research</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./resources.html">Resources</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./history.html">Professional history</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./about.html">About</a></li>
-        </ul>
+    <nav class="nav_bar">
+        <div class="nav_container">
+            <a href="./index.html" class="header_title">Benjamin's Home</a>
+            <ul class="nav_list">
+                <li class="nav_list_item"><a class="nav_item" href="./research.html">Research</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="./resources.html">Resources</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="./history.html">Professional history</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="./about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="resources">
+
+        <h1>Projects I have worked on at various points in my life.</h1>
+
+        <section class="resource_list">
+            <div class="resource_head">
+                <h3 class="resource_head_title"> Coding Projects</h3>
+            </div>
+
+            <div class="resource_item">
+                <div class="art_img_container">
+                    <img src="images/resource_imgs/f1tenth_platform.png" class="art_img" />
+                </div>
+                <div class="resource_content">
+
+                    <a class="resource_title" href="https://github.com/BDEvan5/f1tenth_benchmarks">F1Tenth Racing
+                        Benchmarks</a>
+
+                    <p class="resource_description">A project to benchmark common algorithms for F1Tenth autonomous
+                        racing. I implemented trajectory optimisation and tracking, model predictive control, and
+                        end-to-end reinforcement learning methods.</p>
+
+                </div>
+            </div>
+
+            <div class="resource_item">
+                <div class="art_img_container">
+                    <img src="images/resource_imgs/ppo_in_jax.png" class="art_img" />
+                </div>
+                <div class="resource_content">
+
+                    <a class="resource_title" href="https://github.com/BDEvan5/ppx">PPO in JAX</a>
+
+                    <p class="resource_description">The proximal policy optimisation algorithm using the JAX framework.
+                        I developed this project to learn how the JAX ecosystem can be used for high-performance code.
+                    </p>
+
+                </div>
+            </div>
+            <div class="resource_item">
+                <div class="art_img_container">
+                    <img src="images/resource_imgs/drl_std.png" class="art_img" />
+                </div>
+                <div class="resource_content">
+
+                    <a class="resource_title" href="https://github.com/BDEvan5/pytorch_drl">Deep reinforcement learning
+                        algorithm implementations</a>
+
+                    <p class="resource_description">Personal implementations of the DQN, PPO, DDPG, A2C, SAC and TD3
+                        algorithms in PyTorch. The repo includes a document summarising the algorithms and code
+                        components.</p>
+
+                </div>
+            </div>
+            <div class="resource_item">
+                <div class="art_img_container">
+                    <img src="images/resource_imgs/ParticleFilter.gif" class="art_img" />
+                </div>
+                <div class="resource_content">
+
+                    <a class="resource_title" href="https://github.com/BDEvan5/sensor_fusion">Sensor fusion
+                        algorithms</a>
+
+                    <p class="resource_description">Implemenations of the Linear Kalman Filter (LKF), Extended Kalman
+                        Filter (EKF), Unscented Kalman Filter (UKF) and Particle Filter (PF)</p>
+
+                </div>
+            </div>
+            <div class="resource_item">
+                <div class="art_img_container">
+                    <img src="images/resource_imgs/simple_drl_racing.png" class="art_img" />
+                </div>
+                <div class="resource_content">
+
+                    <a class="resource_title" href="https://github.com/BDEvan5/simple_f1tenth_drl">Tutorial for
+                        end-to-end reinforcement learning for autonomous racing</a>
+
+                    <p class="resource_description">A tutorial style example of how to use end-to-end reinforcement
+                        learning (TD3 and SAC algorithms) for F1Tenth autonomous racing.</p>
+
+
+
+                </div>
+            </div>
+
     </div>
-</nav>
-
-<div class="resources">
-
-    <h1>Projects I have worked on at various points in my life.</h1>
-
-    <section class="resource_list">
-        <div class="resource_head">
-            <h3 class="resource_head_title"> Coding Projects</h3>
-        </div>
-
-        <div class="resource_item">
-            <div class="art_img_container">
-                <img src="images/resource_imgs/ppo_in_jax.png" class="art_img" />
-            </div>
-            <div class="resource_content">
-
-                <a class="resource_title" href="https://github.com/BDEvan5/ppx">PPO in JAX</a>
-
-                <p class="resource_description">The proximal policy optimisation algorithm using the JAX framework. I developed this project to learn how the JAX ecosystem can be used for high-performance code.</p>
-                
-            </div>
-        </div>
-        <div class="resource_item">
-            <div class="art_img_container">
-                <img src="images/resource_imgs/drl_std.png" class="art_img" />
-            </div>
-            <div class="resource_content">
-
-                <a class="resource_title" href="https://github.com/BDEvan5/pytorch_drl">Deep reinforcement learning algorithm implementations</a>
-
-                <p class="resource_description">Personal implementations of the DQN, PPO, DDPG, A2C, SAC and TD3 algorithms in PyTorch. The repo includes a document summarising the algorithms and code components.</p>
-                
-            </div>
-        </div>
-        <div class="resource_item">
-            <div class="art_img_container">
-                <img src="images/resource_imgs/ParticleFilter.gif" class="art_img" />
-            </div>
-            <div class="resource_content">
-
-                <a class="resource_title" href="https://github.com/BDEvan5/sensor_fusion">Sensor fusion algorithms</a>
-
-                <p class="resource_description">Implemenations of the Linear Kalman Filter (LKF), Extended Kalman Filter (EKF), Unscented Kalman Filter (UKF) and Particle Filter (PF)</p>
-                
-            </div>
-        </div>
-        <div class="resource_item">
-            <div class="art_img_container">
-                <img src="images/resource_imgs/simple_drl_racing.png" class="art_img" />
-            </div>
-            <div class="resource_content">
-
-                <a class="resource_title" href="https://github.com/BDEvan5/simple_f1tenth_drl">Tutorial for end-to-end reinforcement learning for autonomous racing</a>
-
-                <p class="resource_description">A tutorial style example of how to use end-to-end reinforcement learning (TD3 and SAC algorithms) for F1Tenth autonomous racing.</p>
-                
-
-
-            </div>
-        </div>
-
-</div>
 
 
 

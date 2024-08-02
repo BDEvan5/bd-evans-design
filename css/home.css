@@ -1,35 +1,36 @@
-
-
-
 :root {
     --main-one: #e3a220;
     --main-two: #ac311f;
     --accent-one: #767e2b;
     --neutral: #ede7d2;
     --dark-neutral: #06213e;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: raleway;
     src: url('../fonts/Raleway-VariableFont_wght.ttf');
 }
-.h1{
+
+.h1 {
     color: var(--main-two);
     font-size: 30pt;
     font-family: 'raleway';
-  }
-  .h2{
+}
+
+.h2 {
     color: var(--accent-one)
-  }
-  .h3{
+}
+
+.h3 {
     color: var(--dark-neutral)
-  }
-  body{
+}
+
+body {
     font-family: 'raleway', sans-serif;
     background-color: var(--white-color);
-  }
-  
-.home_intro{
+}
+
+.home_intro {
     font-family: 'raleway';
     display: flex;
     justify-content: center;
@@ -37,25 +38,29 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.home__content{
+
+.home__content {
     width: 400px;
     margin-right: 100px;
 }
-.home_greeting{
+
+.home_greeting {
     font-size: 38pt;
     color: var(--main-two);
     margin-bottom: 5pt;
 }
-.home_greeting_title{
+
+.home_greeting_title {
     font-size: 16pt;
     font-weight: 600;
     color: var(--dark-neutral);
 }
-.home__img{
+
+.home__img {
     width: 35%;
     aspect-ratio: 1/1;
     max-width: 400px;
-    
+
     /* max-width: 500px; */
     border-radius: 50%;
     overflow: clip;
@@ -63,7 +68,8 @@
     display: inline-flex;
     margin-left: 100px;
 }
-.about_button{
+
+.about_button {
     background-color: var(--accent-one);
     color: var(--neutral);
     display: inline-block;
@@ -74,12 +80,14 @@
     font-weight: 500;
     font-size: 20px;
 }
-.home_block{
+
+.home_block {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.home_round_block{
+
+.home_round_block {
     font-family: 'raleway';
     align-items: center;
     display: flex;
@@ -91,48 +99,55 @@
     border-radius: 40px;
     background-color: var(--neutral);
 }
-#story{
+
+#story {
     background-color: var(--neutral);
 }
 
-#work{
+#work {
     background-color: var(--main-one);
 }
-.home_history_title{
+
+.home_history_title {
     margin-top: 20px;
     font-size: 30pt;
     margin-bottom: 20px;
     color: var(--main-two)
 }
-.history_section{
+
+.history_section {
     display: flex;
 }
-.home_history_story{
+
+.home_history_story {
     width: 400px;
     margin-right: 50px;
     margin-left: 50px;
-    
+
 }
-.home_block_img{
+
+.home_block_img {
     width: 400px;
     margin-right: 50px;
     margin-left: 50px;
-    
+
 }
-.home_website_links{
+
+.home_website_links {
     margin-top: 160px;
     margin-bottom: 80px;
     font-family: 'raleway';
     display: flex;
     justify-content: center;
 }
-.home_website_links a{
-    width: 18%;
+
+.home_website_links a {
+    width: 25%;
     max-width: 300px;
     min-width: 250px;
     height: 28%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -140,13 +155,14 @@
     border: none;
     text-decoration: none;
     justify-content: center;
-    
+
 }
-.home_link_block{
+
+.home_link_block {
     background-color: var(--main-one);
 }
 
-.home_block_title{
+.home_block_title {
     text-decoration: none;
     text-align: center;
     margin-bottom: 20px;
@@ -154,30 +170,18 @@
     font-size: 16pt;
     color: var(--dark-neutral);
 }
-.home_block_description{
+
+.home_block_description {
     color: var(--main-two);
     opacity: 1;
     text-align: center;
     display: flex;
     font-size: large;
 }
-.made_by{
+
+.made_by {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
