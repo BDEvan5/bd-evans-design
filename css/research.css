@@ -94,8 +94,8 @@
     width: 100%;
     margin-top: 1.5rem;
     padding: 0.65rem 1rem;
-    background: var(--color-text);
-    color: var(--color-surface-elevated);
+    background: var(--color-accent-deep);
+    color: var(--palette-neutral);
     border-radius: var(--radius-sm) var(--radius-sm) 0 0;
 }
 
@@ -138,12 +138,12 @@
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 600;
-    color: var(--color-link);
+    color: var(--color-accent-deep);
     line-height: 1.4;
 }
 
 .art_title:hover {
-    color: var(--color-link-hover);
+    color: color-mix(in srgb, var(--palette-primary) 82%, black);
 }
 
 .art_img_container {
@@ -195,11 +195,11 @@
 .art_link_item {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--color-link);
+    color: var(--color-accent-deep);
     text-decoration: none;
 }
 
 .art_link_item:hover {
-    color: var(--color-link-hover);
+    color: color-mix(in srgb, var(--palette-primary) 82%, black);
     text-decoration: underline;
 }

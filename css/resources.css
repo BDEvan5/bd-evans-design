@@ -24,8 +24,8 @@
     width: 100%;
     margin-top: 0;
     padding: 0.65rem 1rem;
-    background: var(--color-text);
-    color: var(--color-surface-elevated);
+    background: var(--color-accent-deep);
+    color: var(--palette-neutral);
     border-radius: var(--radius-sm) var(--radius-sm) 0 0;
 }
 
@@ -68,12 +68,12 @@
     text-decoration: none;
     font-size: 1.05rem;
     font-weight: 600;
-    color: var(--color-link);
+    color: var(--color-accent-deep);
     line-height: 1.4;
 }
 
 .resource_title:hover {
-    color: var(--color-link-hover);
+    color: color-mix(in srgb, var(--palette-primary) 82%, black);
 }
 
 .resource_description {
