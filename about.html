@@ -3,51 +3,46 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About Benjamin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — Benjamin Evans</title>
     <link href="css/home.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<nav class="nav_bar">
-    <div class="nav_container">
-        <a href="./index.html" class="header_title">Benjamin's Home</a>
-        <ul class="nav_list">
-            <li class="nav_list_item"><a class="nav_item" href="./research.html">Research</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./resources.html">Resources</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./history.html">Professional history</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./about.html">About</a></li>
-        </ul>
-    </div>
-</nav>
 
-
-<body class="research">
-
-
-
-    <section class="home_block">
-        <div class="home_round_block" id="story">
-            <h1 class="home_history_title" id="story_title">My Story</h1>
-
-            <div class="history_section">
-                <div>
-                    <img class="home_block_img" src="images/UsInGermany.jpg" />
-                </div>
-
-                <div class="home_history_story">
-                    <p>I was born in England, but moved to the Eastern Cape in South Africa when I was 7. I grew up in
-                        East London until I finished school. </p>
-
-                    <p>In 2016, I moved to Stellenbosch to study engineering and start a new chapter of my life. In 2022
-                        I married Magdaleen and in 2024 we had a daughter. We live on a farm, just outside of
-                        Stellenbosch, with a beautiful view of the mountains.</p>
-
-                    <p>I am a Christian, who believes in the God who created the heavens and the earth.</p>
-
-                </div>
-
-            </div>
+<body>
+    <nav class="nav_bar" aria-label="Main">
+        <div class="nav_container">
+            <a href="index.html" class="header_title">Benjamin Evans</a>
+            <ul class="nav_list">
+                <li class="nav_list_item"><a class="nav_item" href="research.html">Research</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="resources.html">Resources</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="history.html">Professional history</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="about.html" aria-current="page">About</a></li>
+            </ul>
         </div>
+    </nav>
 
-
+    <main>
+        <section class="home_block" aria-labelledby="story_title">
+            <div class="home_round_block" id="story">
+                <h1 class="home_history_title" id="story_title">My Story</h1>
+                <div class="history_section">
+                    <div>
+                        <img class="home_block_img" src="images/UsInGermany.jpg" alt="Benjamin with family in Germany">
+                    </div>
+                    <div class="home_history_story">
+                        <p>I was born in England, but moved to the Eastern Cape in South Africa when I was 7. I grew up in
+                            East London until I finished school.</p>
+                        <p>In 2016, I moved to Stellenbosch to study engineering and start a new chapter of my life. In 2022
+                            I married Magdaleen and in 2024 we had a daughter. We live on a farm, just outside of
+                            Stellenbosch, with a beautiful view of the mountains.</p>
+                        <p>I am a Christian, who believes in the God who created the heavens and the earth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
+</html>

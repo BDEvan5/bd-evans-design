@@ -1,50 +1,71 @@
-
-.nav_bar{
-    font-family: 'raleway';
+.nav_bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: var(--font-sans);
     display: flex;
-    padding-top: 0;
-    margin-top: 0;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid var(--dark-neutral);
-    background-color: var(--third-color);
+    padding: 0.65rem clamp(1rem, 3vw, 2rem);
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-nav-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
-.nav_container{
+
+.nav_container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    max-width: 1100px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.header_title{
-    color: var(--accent-one);
-    text-align: left;
-    margin-right: 200px;
-    font-size: 18pt;
-    text-decoration: none;
-    font-weight: 650;
-  }
-.nav_list{
-    font-family: 'raleway';
-    width: 500px;
-    display: flex;
-    list-style-type: none;
     justify-content: space-between;
-    
+    gap: 1rem 1.5rem;
+    width: 100%;
+    max-width: var(--content-max);
 }
-.nav_list_item{
+
+.header_title {
+    color: var(--color-accent-olive);
+    font-size: 1.15rem;
+    font-weight: 700;
     text-decoration: none;
-    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.header_title:hover {
+    color: var(--color-accent-deep);
+}
+
+.nav_list {
     display: flex;
-    width: 10%;
-    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.35rem 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-.nav_item{
-    text-align: center;
+
+.nav_list_item {
+    margin: 0;
+}
+
+.nav_item {
     text-decoration: none;
-    font-weight: bold;
-    font-size: 14pt;
-    color: var(--dark-neutral);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    padding: 0.35rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.nav_item:hover {
+    color: var(--color-text);
+    border-bottom-color: var(--color-accent);
+}
+
+.nav_item[aria-current="page"] {
+    color: var(--color-accent-deep);
+    border-bottom-color: var(--color-accent-deep);
 }

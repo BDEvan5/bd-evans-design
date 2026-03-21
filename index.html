@@ -3,135 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Benjamin's Website Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Benjamin Evans</title>
     <link href="css/home.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-
-<nav class="nav_bar">
-    <div class="nav_container">
-        <a href="./index.html" class="header_title">Benjamin's Home</a>
-        <ul class="nav_list">
-            <li class="nav_list_item"><a class="nav_item" href="./research.html">Research</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./resources.html">Resources</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./history.html">Professional history</a></li>
-            <li class="nav_list_item"><a class="nav_item" href="./about.html">About</a></li>
-        </ul>
-    </div>
-</nav>
-
 <body>
-    <section class="home_intro">
-
-        <div class="home__content">
-            <h1 class="home_greeting">Hi, I'm Benjamin</h1>
-            <h3 class="home_greeting_title">Machine learning researcher</h3>
-
-            <p>I am a Christian, who likes maths and code, and wants to change the world, one equation at a time.</p>
-            <!-- <p>I am a postdoc at Stellenbosch, where I use maths and code to change the world, one equation at a time.</p> -->
-
-            <p>I enjoy learning new things, good conversations, spending time at home and working in the garden.</p>
-
-            <p>I currently work at <a href="https://instadeep.com">InstaDeep</a> as a research scientist in machine
-                learning.</p>
-
-            <br>
-
-            <a class="about_button" href="./about.html">More about me</a>
-
+    <nav class="nav_bar" aria-label="Main">
+        <div class="nav_container">
+            <a href="index.html" class="header_title">Benjamin Evans</a>
+            <ul class="nav_list">
+                <li class="nav_list_item"><a class="nav_item" href="research.html">Research</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="resources.html">Resources</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="history.html">Professional history</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="about.html">About</a></li>
+            </ul>
         </div>
-        <div class="home__img">
-            <img src="images/me_in_germany.jpg" />
-            <!-- <img src="images/benjamin_evans.png" /> -->
+    </nav>
 
-        </div>
-    </section>
+    <main>
+        <section class="home_intro">
+            <div class="home__content">
+                <h1 class="home_greeting">Hi, I'm Benjamin</h1>
+                <p class="home_greeting_title">Machine learning researcher</p>
 
+                <p>I am a Christian, who likes maths and code, and wants to change the world, one equation at a time.</p>
 
-    </section>
+                <p>I enjoy learning new things, good conversations, spending time at home and working in the garden.</p>
 
-    <section class="home_website_links">
-        <a class="home_link_block" href="./research.html">
-            <h3 class="home_block_title">Research</h3>
-            <p class="home_block_description">Find out more about the research I have done</p>
-        </a>
-        <a class="home_link_block" href="./resources.html">
-            <h3 class="home_block_title">Resources</h3>
-            <p class="home_block_description">Find the work I have done and documents I have written</p>
-        </a>
-        <a class="home_link_block" href="./history.html">
-            <h3 class="home_block_title">Professional History</h3>
-            <p class="home_block_description">Find out about what I have done in my professional life</p>
-        </a>
+                <p>I currently work at <a href="https://instadeep.com">InstaDeep</a> as a research scientist in machine
+                    learning.</p>
 
-
-    </section>
-
-    <section class="home_block">
-        <div class="home_round_block" id="story">
-            <h1 class="home_history_title" id="story_title">My Story</h1>
-
-            <div class="history_section">
-                <div>
-                    <img class="home_block_img" src="images/UsInGermany.jpg" />
-                </div>
-
-                <div class="home_history_story">
-                    <p>I was born in England, but moved to the Eastern Cape in South Africa when I was 7. I grew up in
-                        East London until I finished school. </p>
-
-                    <p>In 2016, I moved to Stellenbosch to study engineering and start a new chapter of my life. In 2021
-                        I met Magdaleen, and we got married the next year. We live on a farm, just outside of
-                        Stellenbosch, with a beautiful view of the mountains.</p>
-
-                    <p>I am a Christian, who believes in the God who created the heavens and the earth.</p>
-
-                </div>
-
+                <a class="about_button" href="about.html">More about me</a>
             </div>
-        </div>
+            <div class="home__img">
+                <img src="images/me_in_germany.jpg" alt="Benjamin Evans">
+            </div>
+        </section>
 
-        <section class="home_block">
-            <div class="home_round_block" id="work">
-                <h1 class="home_history_title" id="work_title">My Work</h1>
+        <section class="home_website_links" aria-label="Site sections">
+            <a class="home_link_block" href="research.html">
+                <h2 class="home_block_title">Research</h2>
+                <p class="home_block_description">Find out more about the research I have done</p>
+            </a>
+            <a class="home_link_block" href="resources.html">
+                <h2 class="home_block_title">Resources</h2>
+                <p class="home_block_description">Find the work I have done and documents I have written</p>
+            </a>
+            <a class="home_link_block" href="history.html">
+                <h2 class="home_block_title">Professional History</h2>
+                <p class="home_block_description">Find out about what I have done in my professional life</p>
+            </a>
+        </section>
 
+        <section class="home_block" aria-labelledby="story_title">
+            <div class="home_round_block" id="story">
+                <h2 class="home_history_title" id="story_title">My Story</h2>
                 <div class="history_section">
+                    <div>
+                        <img class="home_block_img" src="images/UsInGermany.jpg" alt="Benjamin with family in Germany">
+                    </div>
+                    <div class="home_history_story">
+                        <p>I was born in England, but moved to the Eastern Cape in South Africa when I was 7. I grew up in
+                            East London until I finished school.</p>
+                        <p>In 2016, I moved to Stellenbosch to study engineering and start a new chapter of my life. In 2021
+                            I met Magdaleen, and we got married the next year. We live on a farm, just outside of
+                            Stellenbosch, with a beautiful view of the mountains.</p>
+                        <p>I am a Christian, who believes in the God who created the heavens and the earth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="home_block" aria-labelledby="work_title">
+            <div class="home_round_block" id="work">
+                <h2 class="home_history_title" id="work_title">My Work</h2>
+                <div class="history_section">
                     <div class="home_history_story">
                         <p>I matriculated at Selborne College in 2015. I then started studying at Stellenbosch
                             University and completed my bachelor’s in mechatronic engineering in 2019.</p>
-
-                        <p> I continued at Stellenbosch as a graduate student, and in March 2023 I earned my PhD in
-                            Electronic
-                            Engineering.
-                            After graduating, I remained at Stellenbosch as a postdoctoral researcher, working at the
-                            intersection of robotics and machine learning.
-                        </p>
-
-
+                        <p>I continued at Stellenbosch as a graduate student, and in March 2023 I earned my PhD in
+                            Electronic Engineering. After graduating, I remained at Stellenbosch as a postdoctoral researcher,
+                            working at the intersection of robotics and machine learning.</p>
                         <p>In 2024, I started working at InstaDeep as a research scientist in machine learning.
                             I currently work on projects involving language models, multi-modal models, reinforcement
-                            learning and finetuning.
-                        </p>
-
-
+                            learning and finetuning.</p>
                     </div>
-
                     <div>
-                        <img class="home_block_img" src="images/graduation_family.JPG" />
+                        <img class="home_block_img" src="images/graduation_family.JPG"
+                            alt="Benjamin with family at graduation">
                     </div>
                 </div>
             </div>
+        </section>
 
-
-
+        <footer class="site-footer">
             <p class="made_by">Made by Benjamin Evans</p>
-
+        </footer>
+    </main>
 </body>
-
-
-
 
 </html>
