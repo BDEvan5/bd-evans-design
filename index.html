@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Benjamin Evans</title>
     <link href="css/home.css" rel="stylesheet">
+    <link href="css/research.css" rel="stylesheet">
+    <link href="css/resources.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -13,89 +15,338 @@
 <body>
     <nav class="nav_bar" aria-label="Main">
         <div class="nav_container">
-            <a href="index.html" class="header_title">Benjamin Evans</a>
+            <a href="#intro" class="header_title">Benjamin Evans</a>
             <ul class="nav_list">
-                <li class="nav_list_item"><a class="nav_item" href="research.html">Research</a></li>
-                <li class="nav_list_item"><a class="nav_item" href="resources.html">Resources</a></li>
-                <li class="nav_list_item"><a class="nav_item" href="history.html">Professional history</a></li>
-                <li class="nav_list_item"><a class="nav_item" href="about.html">About</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="#history">History</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="#projects">Projects</a></li>
+                <li class="nav_list_item"><a class="nav_item" href="#publications">Publications</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <section class="home_intro">
-            <div class="home__content">
-                <h1 class="home_greeting">Hi, I'm Benjamin</h1>
-                <p class="home_greeting_title">Machine learning researcher</p>
+        <section id="intro" class="hero" aria-label="Introduction">
+            <div class="home_intro">
+                <div class="home__content">
+                    <h1 class="home_greeting">Hi, I'm Benjamin</h1>
+                    <p class="home_greeting_title">Machine learning researcher</p>
 
-                <p>I am a Christian, who likes maths and code, and wants to change the world, one equation at a time.</p>
+                    <p>I am a Christian, who likes maths and code, and wants to change the world, one equation at a time.</p>
 
-                <p>I enjoy learning new things, good conversations, spending time at home and working in the garden.</p>
+                    <p>I enjoy learning new things, good conversations, spending time at home and working in the garden.</p>
 
-                <p>I currently work at <a href="https://instadeep.com">InstaDeep</a> as a research scientist in machine
-                    learning.</p>
+                    <p>I currently work at <a href="https://instadeep.com">InstaDeep</a> as a research scientist in machine
+                        learning.</p>
 
-                <a class="about_button" href="about.html">More about me</a>
-            </div>
-            <div class="home__img">
-                <img src="images/me_in_germany.jpg" alt="Benjamin Evans">
-            </div>
-        </section>
-
-        <section class="home_website_links" aria-label="Site sections">
-            <a class="home_link_block" href="research.html">
-                <h2 class="home_block_title">Research</h2>
-                <p class="home_block_description">Find out more about the research I have done</p>
-            </a>
-            <a class="home_link_block" href="resources.html">
-                <h2 class="home_block_title">Resources</h2>
-                <p class="home_block_description">Find the work I have done and documents I have written</p>
-            </a>
-            <a class="home_link_block" href="history.html">
-                <h2 class="home_block_title">Professional History</h2>
-                <p class="home_block_description">Find out about what I have done in my professional life</p>
-            </a>
-        </section>
-
-        <section class="home_block" aria-labelledby="story_title">
-            <div class="home_round_block" id="story">
-                <h2 class="home_history_title" id="story_title">My Story</h2>
-                <div class="history_section">
-                    <div>
-                        <img class="home_block_img" src="images/UsInGermany.jpg" alt="Benjamin with family in Germany">
-                    </div>
-                    <div class="home_history_story">
-                        <p>I was born in England, but moved to the Eastern Cape in South Africa when I was 7. I grew up in
-                            East London until I finished school.</p>
-                        <p>In 2016, I moved to Stellenbosch to study engineering and start a new chapter of my life. In 2021
-                            I met Magdaleen, and we got married the next year. We live on a farm, just outside of
-                            Stellenbosch, with a beautiful view of the mountains.</p>
-                        <p>I am a Christian, who believes in the God who created the heavens and the earth.</p>
-                    </div>
+                    <a class="about_button" href="#history">Professional history</a>
+                </div>
+                <div class="home__img">
+                    <img src="images/me_in_germany.jpg" alt="Benjamin Evans">
                 </div>
             </div>
         </section>
 
-        <section class="home_block" aria-labelledby="work_title">
-            <div class="home_round_block" id="work">
-                <h2 class="home_history_title" id="work_title">My Work</h2>
-                <div class="history_section">
-                    <div class="home_history_story">
-                        <p>I matriculated at Selborne College in 2015. I then started studying at Stellenbosch
-                            University and completed my bachelor’s in mechatronic engineering in 2019.</p>
-                        <p>I continued at Stellenbosch as a graduate student, and in March 2023 I earned my PhD in
-                            Electronic Engineering. After graduating, I remained at Stellenbosch as a postdoctoral researcher,
-                            working at the intersection of robotics and machine learning.</p>
-                        <p>In 2024, I started working at InstaDeep as a research scientist in machine learning.
-                            I currently work on projects involving language models, multi-modal models, reinforcement
-                            learning and finetuning.</p>
-                    </div>
-                    <div>
-                        <img class="home_block_img" src="images/graduation_family.JPG"
-                            alt="Benjamin with family at graduation">
-                    </div>
+        <section id="history" class="page-section history-page" aria-labelledby="history-heading">
+            <div class="content-narrow history-content">
+                <div class="history-intro-blob">
+                    <p>I hold a PhD in electronic engineering and have spent years building deep learning systems — from
+                        reinforcement learning and robotics to large-scale models and data infrastructure. I care about experiments
+                        that hold up under real constraints and code that survives long training runs and production traffic.</p>
+                    <p>What I want next is to keep growing in production machine learning at scale: reliable pipelines, efficient
+                        distributed training, and models that deliver measurable value when datasets and compute are large.</p>
+                    <p class="history-intro-skills">Languages: strong Python (6+ years), including Pandas, NumPy, and scikit-learn.
+                        Machine learning: transformers, CNNs, reinforcement learning, distributed training on H100 GPUs, and LLMs.
+                        Tools: JAX, PyTorch, GitHub, TensorStore, Grain, and Orbax.</p>
                 </div>
+
+                <h2 id="history-heading" class="history-section-title">Professional history</h2>
+
+                <h3 class="history-major-title" id="experience">Experience</h3>
+                <div class="history-card-stack">
+                <article class="history-card">
+                    <div class="history-card-head">
+                        <h4 class="history-card-title">Research Scientist (machine learning)</h4>
+                        <p class="history-card-dates"><time datetime="2024-03">Mar 2024</time> – present</p>
+                    </div>
+                    <p class="history-card-meta"><a href="https://instadeep.com">InstaDeep</a> · London, UK (hybrid)</p>
+                    <ul class="history-bullets">
+                        <li>Developed post-training for the NTv3 model predicting experimental data from DNA; achieved
+                            state-of-the-art performance on genomic annotations and functional track prediction.</li>
+                        <li>Built efficient dataloading for 16k experiments across 24 species (~30&nbsp;TB): TensorStore-backed
+                            remote storage and compression, averaging ~800&nbsp;MB/s read throughput during training.</li>
+                        <li>Ran large-scale distributed training of a 650M-parameter U-Net (hybrid CNN + Transformer) on 8× H100 GPUs
+                            for 10 days with production-grade, fault-tolerant code.</li>
+                        <li>Significant engineering contributor: over 90k lines of code across 140+ pull requests in the last year.</li>
+                        <li>Exposure to agentic systems, LLM finetuning, RAG, and multi-modal models.</li>
+                    </ul>
+                </article>
+
+                <article class="history-card">
+                    <div class="history-card-head">
+                        <h4 class="history-card-title">Postdoctoral researcher</h4>
+                        <p class="history-card-dates"><time datetime="2023-02">Feb 2023</time> – <time datetime="2024-02">Feb 2024</time></p>
+                    </div>
+                    <p class="history-card-meta">Stellenbosch University · Stellenbosch, South Africa</p>
+                    <ul class="history-bullets">
+                        <li>Research at the intersection of machine learning and analytical modelling: 3 journal articles (IEEE,
+                            Elsevier), 4 IEEE conference papers, and a survey — collectively 160+ citations (Google Scholar).</li>
+                        <li>Compared SAC, TD3, and DDPG with varying inputs for autonomous racing; results supported deployment of an
+                            end-to-end SAC agent on a physical vehicle at up to 5&nbsp;m/s.</li>
+                    </ul>
+                </article>
+                </div>
+
+                <h3 class="history-major-title" id="education">Education</h3>
+                <div class="history-card-stack">
+                <article class="history-card">
+                    <div class="history-card-head">
+                        <h4 class="history-card-title">PhD, Electronic Engineering</h4>
+                        <p class="history-card-dates"><time datetime="2023-03">Mar 2023</time></p>
+                    </div>
+                    <p class="history-card-meta">Stellenbosch University</p>
+                    <ul class="history-bullets">
+                        <li>End-to-end reinforcement learning for autonomous racing with TD3; novel trajectory-based reward signal
+                            improved completion rate by 300%, with peak speed 8&nbsp;m/s.</li>
+                        <li>Applied viability theory so agents could train without crashing: safety supervisor improved sample
+                            efficiency 5×, zero crashes in training, validated on a physical robot.</li>
+                    </ul>
+                </article>
+
+                <article class="history-card">
+                    <div class="history-card-head">
+                        <h4 class="history-card-title">BEng (Mechatronics)</h4>
+                        <p class="history-card-dates"><time datetime="2019-12">Dec 2019</time></p>
+                    </div>
+                    <p class="history-card-meta">Stellenbosch University</p>
+                    <ul class="history-bullets">
+                        <li>Coursework included engineering mathematics, applied mathematics, C programming, engineering design, and
+                            thermodynamics.</li>
+                    </ul>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page-section" aria-labelledby="projects-heading">
+            <header class="section-header">
+                <h2 id="projects-heading" class="section-title">Projects</h2>
+                <p class="section-lead">Projects I have worked on at various points in my life.</p>
+            </header>
+
+            <div class="content-narrow">
+                <div class="resources resources--embedded">
+                    <section class="resource_list" aria-labelledby="coding-projects-heading">
+                        <div class="resource_head">
+                            <h3 class="resource_head_title" id="coding-projects-heading">Coding Projects</h3>
+                        </div>
+
+                        <div class="resource_item">
+                            <div class="art_img_container">
+                                <img src="images/resource_imgs/f1tenth_platform.png" class="art_img" alt="">
+                            </div>
+                            <div class="resource_content">
+                                <a class="resource_title" href="https://github.com/BDEvan5/f1tenth_benchmarks">F1Tenth Racing
+                                    Benchmarks</a>
+                                <p class="resource_description">A project to benchmark common algorithms for F1Tenth autonomous
+                                    racing. I implemented trajectory optimisation and tracking, model predictive control, and
+                                    end-to-end reinforcement learning methods.</p>
+                            </div>
+                        </div>
+
+                        <div class="resource_item">
+                            <div class="art_img_container">
+                                <img src="images/resource_imgs/ppo_in_jax.png" class="art_img" alt="">
+                            </div>
+                            <div class="resource_content">
+                                <a class="resource_title" href="https://github.com/BDEvan5/ppx">PPO in JAX</a>
+                                <p class="resource_description">The proximal policy optimisation algorithm using the JAX framework.
+                                    I developed this project to learn how the JAX ecosystem can be used for high-performance code.</p>
+                            </div>
+                        </div>
+
+                        <div class="resource_item">
+                            <div class="art_img_container">
+                                <img src="images/resource_imgs/drl_std.png" class="art_img" alt="">
+                            </div>
+                            <div class="resource_content">
+                                <a class="resource_title" href="https://github.com/BDEvan5/pytorch_drl">Deep reinforcement learning
+                                    algorithm implementations</a>
+                                <p class="resource_description">Personal implementations of the DQN, PPO, DDPG, A2C, SAC and TD3
+                                    algorithms in PyTorch. The repo includes a document summarising the algorithms and code
+                                    components.</p>
+                            </div>
+                        </div>
+
+                        <div class="resource_item">
+                            <div class="art_img_container">
+                                <img src="images/resource_imgs/ParticleFilter.gif" class="art_img" alt="">
+                            </div>
+                            <div class="resource_content">
+                                <a class="resource_title" href="https://github.com/BDEvan5/sensor_fusion">Sensor fusion
+                                    algorithms</a>
+                                <p class="resource_description">Implementations of the Linear Kalman Filter (LKF), Extended Kalman
+                                    Filter (EKF), Unscented Kalman Filter (UKF) and Particle Filter (PF)</p>
+                            </div>
+                        </div>
+
+                        <div class="resource_item">
+                            <div class="art_img_container">
+                                <img src="images/resource_imgs/simple_drl_racing.png" class="art_img" alt="">
+                            </div>
+                            <div class="resource_content">
+                                <a class="resource_title" href="https://github.com/BDEvan5/simple_f1tenth_drl">Tutorial for
+                                    end-to-end reinforcement learning for autonomous racing</a>
+                                <p class="resource_description">A tutorial style example of how to use end-to-end reinforcement
+                                    learning (TD3 and SAC algorithms) for F1Tenth autonomous racing.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="page-section page-section--tail" aria-labelledby="publications-heading">
+            <div class="content-narrow">
+                <section class="article_list" aria-label="Peer-reviewed publications and thesis">
+                    <div class="article_head">
+                        <h2 class="research_title" id="publications-heading">Publications</h2>
+                    </div>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/f1tenth_survey_paper.jpg" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title" href="https://arxiv.org/abs/2402.18558">Unifying F1TENTH Autonomous Racing:
+                                Survey, Methods and Benchmarks</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Raphael Trumpp, Marco Caccamo, Felix Jahncke,
+                                Johannes Betz, Hendrik Willem Jordaan, Herman Arnold Engelbrecht</p>
+                            <ul class="art_link_list">
+                                <li><a class="art_link_item" href="https://github.com/BDEvan5/f1tenth_benchmarks">Code</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/local_map_racing_img.png" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title" href="https://arxiv.org/abs/2401.17732">High-performance Racing on Unmapped
+                                Tracks using Local Maps</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Hendrik Willem Jordaan, Herman Arnold
+                                Engelbrecht</p>
+                            <p class="art_journal">2024 IEEE Intelligent Vehicles Symposium (IV)</p>
+                            <ul class="art_link_list">
+                                <li><a class="art_link_item" href="https://github.com/BDEvan5/f1tenth_benchmarks">Code</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/bypassing_sim2real.png" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title" href="https://arxiv.org/abs/2209.11082">Bypassing the Simulation-to-reality
+                                Gap: Online Reinforcement Learning using a Supervisor</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Johannes Betz, Hongrui Zheng, Herman Arnold
+                                Engelbrecht, Rahul Mangharam, Hendrik Willem Jordaan</p>
+                            <p class="art_journal">International Conference on Advanced Robotics (ICAR), 2023, IEEE</p>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/comparing_drl_arches.jpg" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title"
+                                href="https://www.sciencedirect.com/science/article/pii/S266682702300049X">Comparing deep
+                                reinforcement learning architectures for autonomous racing</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Hendrik Willem Jordaan, Herman Arnold
+                                Engelbrecht</p>
+                            <p class="art_journal">Machine Learning with Applications, Elsevier, 2023</p>
+                            <ul class="art_link_list">
+                                <li><a class="art_link_item" href="https://github.com/BDEvan5/f1tenth_drl">Code</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/tal_reward.png" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title" href="https://ieeexplore.ieee.org/document/10182327">High-speed Autonomous
+                                Racing using Trajectory-aided Deep Reinforcement Learning</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Herman Arnold Engelbrecht, Hendrik Willem
+                                Jordaan</p>
+                            <p class="art_journal">Robotics and Automation Letters, IEEE, 2023</p>
+                            <ul class="art_link_list">
+                                <li><a class="art_link_item" href="https://github.com/BDEvan5/TrajectoryAidedLearning">Code</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/safety_supervisor.png" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title" href="https://www.sciencedirect.com/science/article/pii/S2667241323000125">Safe
+                                reinforcement learning for high-speed autonomous racing</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Hendrik Willem Jordaan, Herman Arnold
+                                Engelbrecht</p>
+                            <p class="art_journal">Cognitive Robotics, Elsevier, 2023</p>
+                            <ul class="art_link_list">
+                                <li><a class="art_link_item" href="https://github.com/BDEvan5/SafeRaceLearning">Code</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/PhD_Problem.jpg" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title"
+                                href="https://scholar.sun.ac.za/items/15cfa393-6520-49a6-abf4-fdda9cc03188">Accelerating deep
+                                reinforcement learning for autonomous racing</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong></p>
+                            <p class="art_journal">PhD Dissertation, Stellenbosch University, 2023</p>
+                            <ul class="art_link_list">
+                                <li><a class="art_link_item" href="https://github.com/BDEvan5/F1TenthResultsPhD">Code</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/reward_signal_design.png" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title" href="https://ieeexplore.ieee.org/abstract/document/9659438">Reward Signal
+                                Design for Autonomous Racing</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Herman Arnold Engelbrecht, Hendrik Willem
+                                Jordaan</p>
+                            <p class="art_journal">International Conference on Advanced Robotics (ICAR), 2021, IEEE</p>
+                        </div>
+                    </article>
+
+                    <article class="art_item">
+                        <div class="art_img_container">
+                            <img src="images/art_imgs/local_planning_subsystem.png" class="art_img" alt="">
+                        </div>
+                        <div class="art_content">
+                            <a class="art_title" href="https://ieeexplore.ieee.org/abstract/document/9659466">Learning the
+                                Subsystem of Local Planning for Autonomous Racing</a>
+                            <p class="art_authors"><strong>Benjamin David Evans</strong>, Herman Arnold Engelbrecht, Hendrik Willem
+                                Jordaan</p>
+                            <p class="art_journal">International Conference on Advanced Robotics (ICAR), 2021, IEEE</p>
+                        </div>
+                    </article>
+                </section>
             </div>
         </section>
 

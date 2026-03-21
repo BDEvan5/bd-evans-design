@@ -82,6 +82,14 @@
     margin-top: 0.5rem;
 }
 
+.content-narrow .article_list {
+    max-width: 100%;
+}
+
+.page-section .article_list .article_head {
+    margin-top: 0;
+}
+
 .article_head {
     width: 100%;
     margin-top: 1.5rem;

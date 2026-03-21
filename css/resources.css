@@ -6,9 +6,18 @@
     width: 100%;
 }
 
+.resources--embedded {
+    margin-top: 0;
+    align-items: stretch;
+}
+
 .resource_list {
     width: 100%;
     max-width: 56rem;
+}
+
+.content-narrow .resource_list {
+    max-width: 100%;
 }
 
 .resource_head {
