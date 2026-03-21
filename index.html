@@ -26,37 +26,77 @@
 
     <main>
         <section id="intro" class="hero" aria-label="Introduction">
-            <div class="home_intro">
-                <div class="home__content">
+            <div class="hero_shell">
+                <aside class="profile-panel" aria-label="Profile">
+                    <div class="profile-panel__image">
+                        <img src="images/BenjaminHeadShot.jpeg" alt="Benjamin Evans">
+                    </div>
+                    <div class="profile-panel__summary">
+                        <p class="profile-panel__name">Benjamin Evans</p>
+                        <p class="profile-panel__role">Machine Learning Engineer</p>
+                    </div>
+
+                    <div class="profile-panel__tags" aria-label="Languages, skills and tools">
+                        <div class="profile-tag-group">
+                            <p class="profile-tag-label">Languages</p>
+                            <div class="profile-tag-list">
+                                <span class="profile-tag">Python</span>
+                                <span class="profile-tag">SQL</span>
+                                <span class="profile-tag">C</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-tag-group">
+                            <p class="profile-tag-label">Skills</p>
+                            <div class="profile-tag-list">
+                                <span class="profile-tag">Distributed training</span>
+                                <span class="profile-tag">Transformers</span>
+                                <span class="profile-tag">Reinforcement learning</span>
+                                <span class="profile-tag">Data infrastructure</span>
+                                <span class="profile-tag">LLMs</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-tag-group">
+                            <p class="profile-tag-label">Tools</p>
+                            <div class="profile-tag-list">
+                                <span class="profile-tag">JAX</span>
+                                <span class="profile-tag">PyTorch</span>
+                                <span class="profile-tag">TensorStore</span>
+                                <span class="profile-tag">Grain</span>
+                                <span class="profile-tag">Orbax</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="hero_story">
+                    <p class="section-kicker">About</p>
                     <h1 class="home_greeting">Hi, I'm Benjamin</h1>
-                    <p class="home_greeting_title">Machine learning researcher</p>
+                    <p class="home_greeting_title">Research-minded engineering for large-scale machine learning systems.</p>
 
-                    <p>I am a Christian, who likes maths and code, and wants to change the world, one equation at a time.</p>
+                    <div class="hero_body">
+                        <p>I am a machine learning engineer with a PhD in electronic engineering, and my work sits at the
+                            intersection of research and engineering: turning ideas into reliable experiments, scalable pipelines,
+                            and production-ready systems. I currently work at <a href="https://instadeep.com">InstaDeep</a> as a
+                            research scientist, where I build deep learning systems, distributed training workflows, and data
+                            infrastructure for large-scale models.</p>
 
-                    <p>I enjoy learning new things, good conversations, spending time at home and working in the garden.</p>
+                        <p>My experience spans reinforcement learning, robotics, deep learning, and large-scale training systems,
+                            and I am especially interested in building machine learning that performs well under real-world
+                            constraints, whether that means efficient data pipelines, robust evaluation, or production reliability.
+                            Going forward, I want to keep growing in large-scale production ML and contribute to systems that make
+                            advanced models genuinely useful.</p>
 
-                    <p>I currently work at <a href="https://instadeep.com">InstaDeep</a> as a research scientist in machine
-                        learning.</p>
-                </div>
-                <div class="home__img">
-                    <img src="images/BenjaminHeadShot.jpeg" alt="Benjamin Evans">
-                </div>
+                        <p>Outside work, I am shaped by my Christian faith and enjoy family life, thoughtful conversation, and time
+                            in the garden.</p>
+                    </div>
+                </article>
             </div>
         </section>
 
         <section id="history" class="page-section history-page" aria-labelledby="history-heading">
             <div class="content-narrow history-content">
-                <div class="history-intro-blob">
-                    <p>I hold a PhD in electronic engineering and have spent years building deep learning systems — from
-                        reinforcement learning and robotics to large-scale models and data infrastructure. I care about experiments
-                        that hold up under real constraints and code that survives long training runs and production traffic.</p>
-                    <p>What I want next is to keep growing in production machine learning at scale: reliable pipelines, efficient
-                        distributed training, and models that deliver measurable value when datasets and compute are large.</p>
-                    <p class="history-intro-skills">Languages: strong Python (6+ years), including Pandas, NumPy, and scikit-learn.
-                        Machine learning: transformers, CNNs, reinforcement learning, distributed training on H100 GPUs, and LLMs.
-                        Tools: JAX, PyTorch, GitHub, TensorStore, Grain, and Orbax.</p>
-                </div>
-
                 <h2 id="history-heading" class="history-section-title">Professional history</h2>
 
                 <h3 class="history-major-title" id="experience">Experience</h3>
